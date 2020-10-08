@@ -272,6 +272,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_laurel_sprout
 
+TARGET_HAS_FOD := true
+
 # FM
 PRODUCT_PACKAGES += \
     libqcomfm_jni \
