@@ -176,7 +176,7 @@ TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 BOARD_SUPPRESS_EMMC_WIPE := true
-TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/ramdisk-recovery.cpio
+TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := device/xiaomi/laurel_sprout/ramdisk-recovery.cpio
 
 # RenderScript
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
