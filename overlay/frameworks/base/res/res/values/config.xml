@@ -1,0 +1,2 @@
+<!-- if Smart charging supported by kernel and device sepolicy -->
+<bool name="config_smartChargingAvailable">true</bool>
