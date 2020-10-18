@@ -1080,7 +1080,11 @@ on property:vendor.post_boot.parsed=1
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
 
+    chown system system /sys/kernel/boot_slpi/ssr
 
-    # Smart charging
-    chown system system /sys/class/power_supply/battery/input_suspend
+    # Power supply
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend
+    chmod 0660 /sys/class/power_supply/battery/charging_enabled
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/charging_enabled
