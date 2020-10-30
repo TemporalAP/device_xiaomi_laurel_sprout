@@ -16,7 +16,7 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
 # Inherit some common ResurrectionRemix stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 
 TARGET_GAPPS_ARCH := arm64
@@ -27,7 +27,7 @@ TARGET_INCLUDE_WIFI_EXT := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := rr_laurel_sprout
+PRODUCT_NAME := arrow_laurel_sprout
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3

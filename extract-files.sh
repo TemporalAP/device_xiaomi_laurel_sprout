@@ -14,9 +14,9 @@ VENDOR=xiaomi
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-RR_ROOT="${MY_DIR}/../../.."
+ARROW_ROOT="${MY_DIR}/../../.."
 
-HELPER="${RR_ROOT}/vendor/rr/build/tools/extract_utils.sh"
+HELPER="${ARROW_ROOT}/vendor/arrow/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -57,7 +57,7 @@ function blob_fixup() {
 }
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${RR_ROOT}" false "${CLEAN_VENDOR}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${ARROW_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
 
